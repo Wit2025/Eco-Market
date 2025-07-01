@@ -1,6 +1,5 @@
 import 'package:EcoMarket/Home_Page/Home.dart';
 import 'package:EcoMarket/Log_Page/Login.dart';
-import 'package:EcoMarket/Images.dart';
 import 'package:flutter/material.dart';
 // นำเข้าไฟล์อื่นๆ ตามที่จำเป็น
 
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Eco Market',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Images(),
+      home: LoginPage(),
       routes: {
-        '/login': (context) => Images(),
+        '/login': (context) => LoginPage(),
         // ไม่ต้องกำหนด '/home' ที่นี่เพราะเราจะใช้ onGenerateRoute
       },
       onGenerateRoute: (settings) {
